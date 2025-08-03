@@ -1,0 +1,32 @@
+Tabela Verdade: E lógico (AND)
+Construa a tabela verdade da operação 
+AND para duas variáveis booleanas (A e B).
+
+TABELA VERDADE (AND)
+|A| ^ |B|
+ V     V = V
+ V     F = F
+ F     V = F
+ F     F = F
+
+Tabela Verdade: OU lógico (OR)
+Construa a tabela verdade da operação
+OR para duas variáveis booleanas (A e B).
+
+TABELA VERDADE (OR)
+|A| v |B|
+ V     V = V
+ V     F = V
+ F     V = V
+ F     F = F
+Tabela Verdade: Composta
+Monte a tabela verdade para a expressão
+lógica: (A OR B) AND (NOT A).
+
+TABELA VERDADE (A OR B) AND (NOT A)
+|A| v |B|       ^   |!A|
+ V     V = V          F= F
+ V     F = V          F= F
+ F     V = V          V= V
+ F     F = F          V= F
+
