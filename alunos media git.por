@@ -3,12 +3,10 @@ programa
 	//variáveis	
 	const inteiro tam = 5
 	cadeia aluno[tam]
-	cadeia nome 
 	real notaM[tam] 
 	real n1 ,n2 , n3 , aMa ,aMe , aDm , arre
-	real media , divisao , Dm
-	real maior , soma=0.0
-	real menor 
+	real media , divisao , Dm , soma=0.0
+	real maior , menor 
 	inteiro cont=0 ,  i
 	/*equação pra arredondar os numeros
 	 * arredonda=matematica.arredondar(numero,2)
@@ -31,10 +29,9 @@ programa
 		media = n1 + n2 + n3
 		divisao = media / 3 
 		notaM[i] = divisao 
-		escreva("\n")
-			
+		escreva("\n")	
 		}
-			// loop de repetição para aprovação ou reprovação
+		// loop de repetição para aprovação ou reprovação
 		para (i=0; i<tam; i++)
 		{
 			arre= Matematica.arredondar(notaM[i], 2)
@@ -53,9 +50,10 @@ programa
 			}
 			cont++
 		}
-			//loop de maior e menor media
-			maior = notaM[0]
-			menor = notaM[0]
+		//definição de maior e menor
+		maior = notaM[0]
+		menor = notaM[0]
+		//loop de maior e menor media
 		para(i = 0 ; i < tam ; i++)
 		{
 			se(maior < notaM[i]){
@@ -66,11 +64,11 @@ programa
 				menor = notaM[i]
 			}
 		}
-		
 			aMa= Matematica.arredondar(maior, 2)
 			aMe= Matematica.arredondar(menor, 2)
 			escreva("\nMaior nota foi = ",aMa)	
 			escreva("\nMenor nota foi = ",aMe,"\n")
+		//loop de media geral dos alunos 
 		para (i=0 ; i < tam ; i++)
 		{
 			soma = soma + notaM[i]
